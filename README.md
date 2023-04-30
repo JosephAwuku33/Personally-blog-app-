@@ -1,3 +1,20 @@
+
+# Personally ( a minimal blog app)
+
+This is a simple but responsive blog app which is still in works. 
+
+
+##  Features
+- React Web Components were used to construct the logo and brand name as well as other components
+- Tailwind CSS was used in styling the components
+- React Router Dom was used to improve usage of the site and its page through navigation.
+- Firebase was used as a backend service for storing user data, authentication as well as storing and keeping blog posts.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
