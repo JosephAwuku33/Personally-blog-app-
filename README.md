@@ -11,6 +11,9 @@ This is a simple but responsive blog app which is still in works.
 - Firebase was used as a backend service for storing user data, authentication as well as storing and keeping blog posts.
 
 
+## Testing
+Below is the Link to test out the features of this blog app
+https://personally-8c35f.web.app
 
 
 
