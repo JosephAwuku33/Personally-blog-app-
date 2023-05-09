@@ -49,7 +49,7 @@ const SignUp = () => {
 
 
     return (
-        <section className="h-screen">
+        <section className="lg:h-screen sm:h-3/4 mb-12">
             <div className="px-6 h-full text-gray-dark">
                 <div className="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6">
                     <div className="grow-0 shrink-1 md:shrink-0 basis-auto xl:w-6/12 lg:w-6/12 md:w-9/12 mb-12 md:mb-0">
@@ -96,7 +96,7 @@ const SignUp = () => {
                                 <p className="text-center font-semibold mx-4 mb-0">Or</p>
                             </div>
                            
-                            <div className="mb-6">
+                            <div className="mb-4">
                                 <input
                                 type="email"
                                 className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-dark bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-light focus:bg-white focus:outline-none"
@@ -106,7 +106,7 @@ const SignUp = () => {
                             </div>
 
                             
-          <div className="mb-6">
+          <div className="mb-4">
             <input
               type="password"
               className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-dark bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-light focus:bg-white focus:border-gray-light focus:outline-none"
@@ -115,7 +115,7 @@ const SignUp = () => {
               
             />
           </div>
-          <div className="flex items-center justify-center text-center lg:text-left ">
+          <div className="flex items-center justify-center text-center lg:text-left  ">
             <button
               type="submit"
               className="inline-block px-7 py-3 bg-gray-dark text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-light hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
