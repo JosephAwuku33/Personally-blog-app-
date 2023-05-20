@@ -62,7 +62,7 @@ const SignUp = () => {
  
                         {loading && error && <ErrorAlert message={error}/> }
                         <form onSubmit={handleSubmit}>
-                            <div className="flex flex-row items-center justify-center lg:justify-start">
+                            <div className="flex flex-row items-center justify-center">
                                 <p className="text-lg mb-0 mr-4">Sign in with</p>
                                 <button
                                     type="button"

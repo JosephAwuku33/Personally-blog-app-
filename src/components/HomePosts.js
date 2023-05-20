@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, doc, deleteDoc } from 'firebase/firestore';
 import { db } from '../firebase-config';
-
+import { useAuth } from '../contexts/AuthContext';
+import { auth } from '../firebase-config';
+import  Delete  from "../assets/Delete.png";
 
 function HomePosts() {
     const [postLists, setPostList] = useState([]);
 
     const postCollectionRef = collection(db, "posts");
 
-
-
+    const { isAuth } = useAuth();
+    const deletePost = async (id) => {
+        try {
+            const postDoc = doc(db, "posts", id )
+            await deleteDoc(postDoc);
+        } catch (err) {
+            console.log(err)
+        }
+    };
+ 
     useEffect(() => {
         const getPosts = async () => {
             const data = await getDocs(postCollectionRef);
@@ -17,7 +27,10 @@ function HomePosts() {
         }; 
 
         getPosts();
-    });
+    },[postCollectionRef]);
+
+    
+
     return (
         <div className="flex flex-col items-center justify-center mt-8">
             {postLists.map((post) => {
@@ -36,6 +49,9 @@ function HomePosts() {
                                     {post.post}
                                 </p>
                                 <p className="text-gray-light text-xs mb-2">@ {post.author.name} </p>
+                                {isAuth && post.author.id === auth.currentUser.uid &&   ( <button className="text-center p-3 rounded " onClick={() => {deletePost(post.id)}}> <img src={Delete} alt='e cast'/>
+                            </button> ) 
+                        }
                         </div>
                     </div>
                     </div>
