@@ -1,17 +1,6 @@
 {
   "hosting": {
     "public": "build",
-    "headers": [
-      {
-        "source": "**/*",
-        "headers": [
-          {
-            "key": "Cross-Origin-Embedder-Policy",
-            "value": "unsafe-none"
-          }
-        ]
-      }
-    ],
     "ignore": [
       "firebase.json",
       "**/.*",
