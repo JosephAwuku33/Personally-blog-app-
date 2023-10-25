@@ -4,7 +4,7 @@
 This is a simple but responsive blog app which is still in works. 
 
 
-##  Features
+##  Tech Stack
 - React Web Components were used to construct the logo and brand name as well as other components
 - Tailwind CSS was used in styling the components
 - React Router Dom was used to improve usage of the site and its page through navigation.
