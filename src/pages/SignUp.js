@@ -39,9 +39,10 @@ const SignUp = () => {
 
 
     const signInWithGoogle = () => {
-      signInWithPopup(auth, provider).then((result) => {
+      signInWithPopup(auth, provider).then( (result) => {
         localStorage.setItem("isAuth", true)
-        setIsAuth(true)
+        setIsAuth(true);
+        console.log(auth);
         navigate("/Post");
         console.log(result.user.displayName[0])
       }).catch((err) => console.log(err))

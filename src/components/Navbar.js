@@ -13,7 +13,7 @@ function Navbar() {
     
    
     let navigate = useNavigate();
-    //const name = user.displayName[0];
+    
 
     const signUserOut = () => {
         signOut(auth).then(() => {
@@ -95,10 +95,10 @@ function Navbar() {
                                     <Link to="/Post">Create Post</Link>
                                </div>
                                <div className="relative">
-                                    <img className ="object-cover w-14 h-14 rounded-full"
-                                        src="https://images.unsplash.com/photo-1520315342629-6ea920342047?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                    <img className ="object-cover w-12 h-12 rounded-full"
+                                        src={auth.currentUser.photoURL}
                                         alt="J"  />
-                                    <span className="absolute lg:right-0  sm:left-0 md:right-0 w-4 h-4  bg-green border-2 border-white rounded-full top-1 bottom-0 mb-1 md:mb-0"></span>
+                                    <span className="absolute lg:right-0  sm:left-0 md:right-0 w-4 h-4  bg-green border-2 border-white rounded-full top-0 bottom-0 mb-1 md:mb-0"></span>
                                 </div>
                                 <div className="block lg:px-10 lg:py-2 my-3 md:px-8 sm:my-3">
                                     <button className='bg bg-red-dark text-white py-2 px-4 rounded-md hover:bg-gray-light' onClick={signUserOut}>Log Out</button>

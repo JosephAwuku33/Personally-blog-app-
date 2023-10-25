@@ -5,4 +5,4 @@ export const year = currentDate.getFullYear();
 export const monthName = months[currentDate.getMonth()];
 export const date = currentDate.getDate();
 
-console.log(`${monthName} ${date}, ${year}`); // outputs "April 29, 2023"
+console.log(`${monthName} ${date}, ${year}`); 
