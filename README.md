@@ -1,5 +1,5 @@
 
-# Personally ( a minimal blog app)
+# Personally ( a blog app)
 
 This is a simple but responsive blog app which is still in works. 
 
